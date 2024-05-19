@@ -1,0 +1,44 @@
+[
+    {
+        "discount":"",
+        "img":"./images/k-jacket.png",
+        "productName":"K mountain jacket",
+        "price":"90",
+        "notprice":"120"    
+    },
+    {
+        "discount":"new",
+        "img":"./images/gucci-bag.jpg",
+        "productName":"Gucci Bag",
+        "price":"200",
+        "notprice":"320"    
+    },
+    {
+        "discount":"",
+        "img":"./images/gaming-cooler.png",
+        "productName":"cooler master liquid CPU cooler",
+        "price":"75",
+        "notprice":"180"    
+    },
+    {
+        "discount":"",
+        "img":"./images/small-drawer.png",
+        "productName":"IKIA small drawer",
+        "price":"60",
+        "notprice":"100"    
+    },
+    {
+        "discount":"new",
+        "img":"./images/jbl-speaker-product.jpeg",
+        "productName":"JBL speaker",
+        "price":"110",
+        "notprice":"240"    
+    },
+    {
+        "discount":"new",
+        "img":"./images/jeans.png",
+        "productName":"DENIM blue jeans",
+        "price":"130",
+        "notprice":"300"    
+    }
+]

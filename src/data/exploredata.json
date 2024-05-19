@@ -1,0 +1,74 @@
+[
+    {
+        "discount":"new",
+        "img":"./images/dog-food.jpg",
+        "productName":"dog pedgree",
+        "price":"20"
+    },
+    {
+        "discount":"",
+        "img":"./images/controller-ps5.png",
+        "productName":"PS5 gamepad",
+        "price":"100"
+    },
+    {
+        "discount":"new",
+        "img":"./images/camera.png",
+        "productName":"DSLR camera",
+        "price":"230"
+    },
+    {
+        "discount":"",
+        "img":"./images/laptop.png",
+        "productName":"ASUS F15 gaming laptop",
+        "price":"450"
+    },
+    {
+        "discount":"",
+        "img":"./images/shampoo.png",
+        "productName":"LAKME shampoo",
+        "price":"45"
+    },
+    {
+        "discount":"new",
+        "img":"./images/refine-oil.png",
+        "productName":"SAFOLA refine oil",
+        "price":"30"
+    },
+    {
+        "discount":"",
+        "img":"./images/stool.jpg",
+        "productName":"IKIA stool",
+        "price":"90"
+    },
+    {
+        "discount":"",
+        "img":"./images/rice-packet.jpeg",
+        "productName":"INDIAGATE rice packet",
+        "price":"75"
+    },
+    {
+        "discount":"",
+        "img":"./images/soccer-shoe.png",
+        "productName":"NIKE football soccer shoe",
+        "price":"110"
+    },
+    {
+        "discount":"new",
+        "img":"./images/gaming-cabinet.jpeg",
+        "productName":"ANT e-sports gaming cabinet",
+        "price":"80"
+    },
+    {
+        "discount":"",
+        "img":"./images/gaming-table.jpg",
+        "productName":"IKIA gaming table",
+        "price":"300"
+    },
+    {
+        "discount":"new",
+        "img":"./images/fridge.jpeg",
+        "productName":"LG double door fridge",
+        "price":"800"
+    }
+]

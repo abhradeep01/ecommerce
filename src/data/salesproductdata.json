@@ -1,0 +1,37 @@
+[
+    {
+        "discount":"34%",
+        "img":"./images/game-controller.png",
+        "productName":"HAVIT HT GamePad",
+        "price":"50",
+        "notPrice":"150 "
+    },
+    {
+        "discount":"23%",
+        "img":"./images/gaming-keyboard.png",
+        "productName":"ant-esports gaming keyboard",
+        "price":"80",
+        "notPrice":"200"
+    },
+    {
+        "discount":"28%",
+        "img":"./images/gaming-monitor.png",
+        "productName":"ASUS gaming monitor",
+        "price":"100",
+        "notPrice":"250"
+    },
+    {
+        "discount":"33%",
+        "img":"./images/rest-chair.png",
+        "productName":"IKIA rest chair",
+        "price":"120",
+        "notPrice":"180"
+    },
+    {
+        "discount":"37%",
+        "img":"./images/ps5.jpg",
+        "productName":"SONY PS5 gaming console",
+        "price":"550",
+        "notPrice":"650"
+    }
+]
