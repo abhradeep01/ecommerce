@@ -1,0 +1,71 @@
+nav{
+    position: fixed;
+    top:0;
+    width:95vw;
+    height:5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    h1{
+        font-size:1.75rem;
+        font-weight:600;
+        text-transform: capitalize;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        gap:1rem;
+        li{
+            list-style:none;
+            a{
+                font-size:0.95rem;
+                font-weight:600;
+                text-transform: capitalize;
+                padding:0.25rem;
+                border-radius:0.25rem;
+                cursor: pointer;
+            }
+        }
+        li:hover{
+            a{
+                background-color:rgb(33, 33, 248);
+                color:white;
+            }
+        }
+    }
+    .input{
+        position: relative;
+        width:fit-content;
+        height:fit-content;
+        input{
+            width:15rem;
+            height:1.75rem;
+            outline:none;
+            border:solid 1px;
+            padding:0.1rem;
+            border-radius:0.2rem;
+        }
+        ::placeholder{
+            font-size:1.05rem;
+            font-weight:500;
+            text-transform: capitalize;
+        }
+        .search{
+            position: absolute;
+            height:100%;
+            top:0;
+            right:5px;
+            display: flex;
+            align-items: center;
+            font-size:1.5rem;
+            cursor: pointer;
+        }
+    }
+    .settings{
+        display: flex;
+        flex-direction: row;
+        gap:1rem;
+        font-size:1.5rem;
+    }
+}
