@@ -104,7 +104,6 @@ main{
         padding:5rem;
         display: flex;
         justify-content: center;
-        border:solid 1px red;
         img{
             width:100%;
         }
