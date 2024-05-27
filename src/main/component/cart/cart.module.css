@@ -7,6 +7,7 @@
     padding:0.25rem;
     box-shadow:0px 0px 0px 1px rgb(228, 227, 227);
     border-radius:0.5rem;
+    gap:0.5rem;
 }
 .tags{
     position: absolute;
@@ -14,19 +15,20 @@
     top:0.5rem;
     left:0.5rem;
     width:fit-content;
-    padding:0.1rem;
+    padding:0.2rem 0.5rem;
     font-size:0.9rem;
-    font-weight:700;
+    font-weight:600;
     border-radius:0.25rem;
+    text-align: center;
 }
 .green{
     text-transform: capitalize;
     color:white;
-    background-color:rgb(36, 236, 36);
+    background-color:rgb(5, 155, 5);
 }
 .red{
     color:white;
-    background-color:rgb(241, 38, 38);
+    background-color:rgb(245, 31, 31);
 }
 .float_icon{
     position: absolute;
@@ -58,7 +60,7 @@
         color:white;
         border:none;
         outline:none;
-        font-size:0.9rem;
+        font-size:0.8rem;
         font-weight:600;
         padding:0.2rem;
         text-transform: capitalize;
@@ -66,6 +68,7 @@
     }
     button:hover{
         opacity:0.85;
+        cursor: pointer;
     }
 }
 .text{
@@ -94,5 +97,6 @@
 }
 .cart:hover{
     box-shadow:0px 0px 5px rgb(175, 175, 175);
+    transition:box-shadow 0.2s;
     cursor: pointer;
 }

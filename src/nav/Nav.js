@@ -45,7 +45,7 @@ const Nav = () => {
                 <CiHeart className='icon' />
                 <div>0</div>
               </div>
-              <CiHome className='icon' />
+              <CiHome className='icon' onClick={()=>window.open('./index.html','_self')} />
               <div className="add">
                 <CiShoppingCart className='icon' />
                 <div>0</div>
@@ -57,7 +57,7 @@ const Nav = () => {
     return (
         <>
             <nav>
-                <h1 onClick={()=>window.open('./index.html','_self')} style={{cursor:'pointer'}}>exclusive</h1>
+                <div className='h1' onClick={()=>window.open('./index.html','_self')} style={{cursor:'pointer'}}>exclusive</div>
                 <ul>
                     <List text={'home'} />
                     <List text={'contact'} />

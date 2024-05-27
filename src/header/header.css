@@ -83,7 +83,7 @@ header{
 }
 @media (max-width:490px) {
     header{
-        width:99vw;
+        width:98vw;
         .right{
             padding:0.25rem;
         }

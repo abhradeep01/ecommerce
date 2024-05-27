@@ -1,8 +1,7 @@
 import React from 'react'
 import List from '../component/List'
 import './header.css';
-import slide1 from '../images/iphone.png';
-import slide2 from '../images/tv.jpg';
+import dataheader from '../data/otherdata.json';
 function Header() {
   const category = ["women's fashion",
   "men's fashion","electronics",
@@ -28,8 +27,12 @@ function Header() {
             })}
         </div>
         <div className="right">
-            <Slide img={slide1} h3Text={'10% off on iphone'} />
-            <Slide img={slide2} h3Text={'20% off on apple tv'} />
+            {dataheader.slide.map((item,index)=>{
+                return <Slide 
+                key={index}
+                img={item.img} 
+                h3Text={item.head} /> 
+            })}
         </div>
     </header>
   )

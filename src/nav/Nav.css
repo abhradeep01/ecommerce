@@ -1,7 +1,7 @@
 nav{
     position: fixed;
     top:0;
-    width:100vw;
+    width:100%;
     height:5rem;
     display: flex;
     flex-direction: row;
@@ -9,8 +9,8 @@ nav{
     align-items: center;
     z-index:2;
     background-color:whitesmoke;
-    h1{
-        font-size:1.75rem;
+    .h1{
+        font-size:1.5rem;
         font-weight:600;
         text-transform: capitalize;
     }
@@ -105,7 +105,7 @@ nav{
     bottom:0;
     left: 0;
     width:40%;
-    height:100vh;
+    height:100%;
     display: flex;
     flex-direction: column;
     gap:0.1rem;
@@ -164,6 +164,8 @@ nav{
     nav{
         display: flex;
         flex-direction: column;
+        justify-content:space-around;
+        padding:0;
     }
     .nav-lower{
         width:100%;

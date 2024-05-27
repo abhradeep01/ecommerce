@@ -1,0 +1,40 @@
+{
+    "slide":[
+        {
+            "img":"../images/iphone.png",
+            "head":"10% off on iphone"
+        },
+        {
+            "img":"../images/tv.jpg",
+            "head":"20% off on apple tv"
+        }
+    ],
+    "banner":{
+        "img":"../images/JBL_BOOMBOX_2_HERO_020_x1 (1) 1.png",
+        "head":"categories",
+        "subhead":"enhance your music experience",
+        "describe":"music experience banner"
+    },
+    "first":{
+        "img":"../images/ps5.webp",
+        "head":"PlayStation 5",
+        "desc":"playStation coming out for sale"
+    },
+    "second":{
+        "img":"../images/women-collection.jpg",
+        "head":"women collection",
+        "desc":"featured women collection"
+    },
+    "sub":[
+        {
+            "img":"../images/speaker-ads.webp",
+            "head":"speakers",
+            "desc":"wireless speaker"
+        },
+        {
+            "img":"../images/perfume-ads.jpg",
+            "head":"perfume",
+            "desc":"gucci perfume"
+        }
+    ]
+}
