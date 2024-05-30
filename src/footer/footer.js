@@ -61,8 +61,8 @@ function Footer() {
             <div className="download">
                 <BsQrCode className='qrcode' />
                 <div className="store">
-                    <img src={playStore} alt="" />
-                    <img src={appStore} alt="" />
+                    <img src={playStore} alt='download from google play store' />
+                    <img src={appStore} alt="download from app store" />
                 </div>
             </div>
         </div>

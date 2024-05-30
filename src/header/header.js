@@ -8,6 +8,8 @@ function Header() {
   "home & lifestyle","medicine",
   "sports & outdoor","baby's & toys",
    "groceries & pets","health & beauty"]; 
+
+   //this is the slider ads component
    const Slide =({img,imgAlt,h3Text,link})=>{
     return(
         <div className="slide">
@@ -19,6 +21,8 @@ function Header() {
         </div>
     )
    } 
+
+   //this is the main header component
   return (
     <header>
         <div className="left">

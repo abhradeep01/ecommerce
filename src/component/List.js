@@ -5,7 +5,7 @@ function List({link,text,arrow}) {
   return (
     <li>
         <a href={link}>{text}</a>
-        <IoIosArrowForward className='arrow' style={arrow?{display:'inline'}:{display:'none'}} />
+        <IoIosArrowForward className='arrow' />
     </li>
   )
 }

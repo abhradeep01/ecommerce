@@ -1,5 +1,5 @@
 footer{
-    width:100%;
+    width:100vw;
     display: flex;
     flex-flow:row wrap;
     gap:2rem;
@@ -28,7 +28,7 @@ footer{
         }
         .input{
             position: relative;
-            border:solid 1px wheat;
+            padding:0.1rem 0;
             input{
                 width:97%;
                 height:1.5rem;
@@ -37,6 +37,7 @@ footer{
                 background-color:black;
                 color:white;
                 border-radius:0.15rem;
+                outline:none;
             }
             ::placeholder{
                 color:white;
@@ -60,10 +61,13 @@ footer{
                 text-transform: capitalize;
                 cursor: pointer;
             }
+            .arrow{
+                display:none;
+            }
         }
         li:hover{
             a{
-                color:rgb(236, 47, 47);
+                color:rgb(250, 83, 83);
             }
         }
         .download{
@@ -82,6 +86,13 @@ footer{
                 img{
                     width:100%;
                 }
+            }
+        }
+    }
+    .sub-footer:nth-child(2){
+        li:nth-child(3){
+            a{
+                text-transform: lowercase;
             }
         }
     }
