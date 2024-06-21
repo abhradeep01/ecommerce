@@ -5,6 +5,7 @@ import List from '../component/List';
 import { BsQrCode } from "../../node_modules/react-icons/bs";
 import appStore from '../images/apple-store.png';
 import playStore from '../images/google-play.png';
+import { FacebookRounded,Instagram,LinkedIn,WhatsApp } from '@mui/icons-material';
 const support =[
     "111 bijoy sarani, dhaka, DH 1515, bangladesh",
     "exclusive@gmail.com",
@@ -64,6 +65,12 @@ function Footer() {
                     <img src={playStore} alt='download from google play store' />
                     <img src={appStore} alt="download from app store" />
                 </div>
+            </div>
+            <div className="social">
+                <FacebookRounded />
+                <Instagram />
+                <LinkedIn />
+                <WhatsApp />
             </div>
         </div>
     </footer>

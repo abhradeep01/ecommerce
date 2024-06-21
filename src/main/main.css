@@ -39,7 +39,7 @@ main{
         .card{
             width:5rem;
             text-align: center;
-            box-shadow:0px 0px 0px 1px rgb(202, 202, 202);
+            box-shadow:0px 0px 0px 1px rgb(224, 224, 224);
             padding:0.25rem;
             border-radius:0.25rem;
             cursor: pointer;
@@ -53,8 +53,8 @@ main{
             }
         }
         .card:hover{
-            box-shadow:0px 0px 5px rgb(202, 202, 202);
-            transition:box-shadow 0.2s ;
+            box-shadow:0px 0px 7px rgb(202, 202, 202);
+            transition:box-shadow 0.1ms ;
         }
     }
 }

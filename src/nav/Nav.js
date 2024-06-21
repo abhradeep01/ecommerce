@@ -11,7 +11,7 @@ const Nav = () => {
     const [headerItems,setHeaderItems] = useState([]);
     const [menuVisible,setMenuVisible] = useState(false);
     const [categoryVisible,setCategoryVisible]= useState(false);
-    
+
     useEffect(()=>{
         // for nav section menu
         const nav = document.querySelector('nav');
@@ -53,7 +53,7 @@ const Nav = () => {
     //this is the lower bar for mobile and tablet
     const NavLower=()=> {
         return (
-          <div className="nav-lower">
+          <div className="appbar">
               <HiOutlineMenu className='icon' onClick={()=>setMenuVisible(!menuVisible)} />
               <div className="add">
                 <CiHeart className='icon' />
@@ -79,6 +79,7 @@ const Nav = () => {
                     <List text={'contact'} />
                     <List text={'about'} />
                     <List text={'sign up'} />
+                    <List text={'log in'} />
                 </ul>
                 <div className="input">
                     <input type="text" placeholder="what are you looking for?" />

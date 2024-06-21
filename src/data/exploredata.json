@@ -1,7 +1,7 @@
 [
     {
         "discount":"new",
-        "img":"../images/dog-food.jpg",
+        "img":"./images/dog-food.jpg",
         "productName":"dog pedgree",
         "price":"20"
     },

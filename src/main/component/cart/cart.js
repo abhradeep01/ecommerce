@@ -1,7 +1,10 @@
 import React from 'react'
-import { LuEye,LuHeart } from "react-icons/lu";
 import styles from './cart.module.css';
+import {FavoriteBorder,Favorite,Visibility} from '@mui/icons-material';
+import { IconButton } from '@mui/material';
+import {grey} from '@mui/material/colors';
 function Cart({img,discount,itemName,price,not}) {
+  const [favorite,setFavorite] = React.useState(false);
   return (
     <div className={styles.cart}>
         <div className={`${styles.tags} ${discount==='new'?
@@ -9,8 +12,15 @@ function Cart({img,discount,itemName,price,not}) {
           {display:'none'}}>{discount}
         </div>
         <div className={styles.float_icon}>
-          <LuEye className={styles.icon} />
-          <LuHeart className={styles.icon} />
+          <Visibility className={styles.icon} />
+          {favorite?
+            <IconButton onClick={()=>setFavorite(!favorite)}>
+              <Favorite className={styles.icon} color='error' />
+            </IconButton>:
+            <IconButton onClick={()=>setFavorite(!favorite)}>
+              <FavoriteBorder className={styles.icon} sx={{color:grey[900]}} />
+            </IconButton>
+          }
         </div>
         <div className={styles.up}>
           <img src={img} alt={itemName} />

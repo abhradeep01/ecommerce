@@ -1,0 +1,6 @@
+.not_visible{
+    display:none;
+}
+.visible{
+    display:flex;
+}

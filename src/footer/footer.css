@@ -88,6 +88,11 @@ footer{
                 }
             }
         }
+        .social{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-around;
+        }
     }
     .sub-footer:nth-child(2){
         li:nth-child(3){

@@ -1,11 +1,11 @@
 import React from 'react';
 import { IoIosArrowForward } from "../../node_modules/react-icons/io";
-function List({link,text,arrow}) {
+function List({link,text,arrow,event}) {
   
   return (
     <li>
         <a href={link}>{text}</a>
-        <IoIosArrowForward className='arrow' />
+        <IoIosArrowForward className='arrow' onClick={event} />
     </li>
   )
 }

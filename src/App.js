@@ -4,6 +4,9 @@ import Nav from './nav/Nav';
 import Header from './header/header';
 import Main from './main/main';
 import Footer from './footer/footer';
+import Signup from './additional/form/signup/signup';
+import Login from './additional/form/log in/login';
+// import Styles from './component/style/styles.module.css';
 function App() {
 
   return (
@@ -11,6 +14,8 @@ function App() {
       <Nav />
       <Header />
       <Main />
+      <Signup />
+      <Login />
       <Footer />
     </div>
   );

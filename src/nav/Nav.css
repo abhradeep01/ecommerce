@@ -75,6 +75,14 @@ nav{
         flex-direction: row;
         gap:1rem;
         font-size:1.5rem;
+        svg{
+            padding:0.15rem;
+        }
+        svg:hover{
+            border-radius:50%;
+            background-color:rgb(211, 211, 211);
+            transition:background-color 0.15ms;
+        }
     } 
 }
 .add{
@@ -84,7 +92,7 @@ nav{
         height:0.8rem;
         position: absolute;
         bottom:0.25rem;
-        right:-0.5rem;
+        right:-6px;
         font-size:0.8rem;
         border-radius:50%;
         background-color:rgb(243, 51, 51);
@@ -95,10 +103,17 @@ nav{
         font-weight:600;
     }
 }
+/* .add:hover{
+    svg{
+        border-radius:50%;
+        background-color:rgb(206, 206, 206);
+        transition:background-color 0.15s;
+    }
+} */
 .icon{
     cursor:pointer ;
 }
-.nav-lower{
+.appbar{
     display: none;
 }
 .menu{
@@ -113,7 +128,7 @@ nav{
             display: none;
         }
     }
-    .nav-lower{
+    .appbar{
         width:65%;
         position: fixed;
         bottom:0;
@@ -138,16 +153,16 @@ nav{
         display: flex;
         flex-direction: column;
         gap:0.1rem;
-        padding:2rem 1rem;
+        padding:1rem 1.5rem ;
         z-index:3;
-        background-color: rgb(241, 240, 240);
+        background-color: white;
         box-shadow:0px 0px 5px rgb(204, 203, 203);
         .remove{
             position: fixed;
             top:1rem;
             left:50%;
             border-radius:50%;
-            background-color:whitesmoke;
+            background-color:rgb(231, 230, 230);
             box-shadow:0px 0px 0px 1px rgb(221, 220, 220) ;
             font-size:1.25rem;
             padding:0.2rem;
@@ -179,14 +194,14 @@ nav{
         justify-content:space-around;
         padding:0;
     }
-    .nav-lower{
+    .appbar{
         width:100%;
         border-radius:0;
     }
     .menu{
         width:60%;
         .remove{
-            left:70%;
+            left:75%;
         }
     }
 }
