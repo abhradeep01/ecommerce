@@ -91,7 +91,10 @@ footer{
         .social{
             display: flex;
             flex-direction: row;
-            justify-content:space-around;
+            justify-content:space-between;
+            svg{
+                font-size:28px;
+            }
         }
     }
     .sub-footer:nth-child(2){
