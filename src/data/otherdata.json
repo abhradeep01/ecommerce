@@ -18,23 +18,23 @@
     "first":{
         "img":"../images/ps5.webp",
         "head":"PlayStation 5",
-        "desc":"playStation coming out for sale"
+        "desc":"PlayStation coming out for sale"
     },
     "second":{
-        "img":"../images/women-collection.jpg",
+        "img":"../images/womenCollection.jpg",
         "head":"women collection",
-        "desc":"featured women collection"
+        "desc":"Featured women collection"
     },
     "sub":[
         {
-            "img":"../images/speaker-ads.jpg",
+            "img":"../images/speaker.jpg",
             "head":"speakers",
-            "desc":"wireless speaker"
+            "desc":"Wireless speaker"
         },
         {
-            "img":"../images/perfume-ads.jpg",
+            "img":"../images/perfume.jpg",
             "head":"perfume",
-            "desc":"gucci perfume"
+            "desc":"Gucci perfume"
         }
     ]
 }

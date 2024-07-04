@@ -31,6 +31,19 @@ const service = [
 
 //main component
 function Main() {
+  const onclickCartEvent = (e)=>{
+    const clickedElement = e.target;
+    const parent = clickedElement.closest('#cart');
+    const cartInfo ={
+      quantity:1,
+      itemImg:parent.querySelector('img').src,
+      itemName:parent.dataset.itemName,
+      itemPrice:parent.dataset.price,
+      discount:parent.dataset.discount,
+      bool:parent.dataset.favorite
+    };
+    console.log(JSON.stringify(cartInfo));
+  }
   const Service =()=>{
     const Card =({icon,head,about})=>{
       return(
@@ -59,37 +72,35 @@ function Main() {
       <div className="arrival">
         <Heading context={'featured'} heading={'new arrival'} />
         <div className="ads">
-          <div className="item">
+          <div className="item1 float">
             <img src={first.img} alt={first.desc} />
             <div className="text">
               <div className="h3">{first.head}</div>
-              <div className="p">{first.desc}</div>
-              <a href={'/'} >shop now</a>
+              <div className="h5">{first.desc}</div>
+              <a href="/">buy now</a>
             </div>
           </div>
-          <div className="item item1">
-            <div className="item2">
-              <img src={second.img} alt={second.desc} />
-              <div className="text">
-                <div className="h3">{second.head}</div>
-                <div className="p">{second.desc}</div>
-                <a href={'/'} >shop now</a>
-              </div>
+          <div className="item2 float">
+            <img src={second.img} alt={second.desc} />
+            <div className="text">
+              <div className="h3">{second.head}</div>
+              <div className="h5">{second.desc}</div>
+              <a href="/">buy now</a>
             </div>
-            <div className="item2 item3">
-              {third.map((item,index)=>{
-                return(
-                  <div className="item4">
-                    <img src={item.img} alt={item.desc} />
-                    <div className="text">
-                      <div className="h3">{item.head}</div>
-                      <div className="p">{item.desc}</div>
-                      <a href={'/'} >shop now</a>
-                    </div>
+          </div>
+          <div className="item3">
+            {third.map((item,index)=>{
+              return(
+                <div className="item float">
+                  <img src={item.img} alt={item.desc} />
+                  <div className="text">
+                    <div className="h3">{item.head}</div>
+                    <div className="h5">{item.desc}</div>
+                    <a href="/">buy now</a>
                   </div>
-                )
-              })}
-            </div>
+                </div>
+              )
+            })}
           </div>
         </div>
       </div>
@@ -109,6 +120,7 @@ function Main() {
               img={item.img}
               itemName={item.productName}
               price={item.price}
+              cartEvent={onclickCartEvent}
             />
           })}
         </div>
@@ -147,7 +159,8 @@ function Main() {
              itemName={item.productName}
              price={item.price}
              not={item.notprice}
-              />
+             cartEvent={onclickCartEvent}
+            />
           })}
         </div>
       </div>
@@ -196,8 +209,15 @@ function Main() {
         <Heading context={"today's"} heading={'flash sales'} icon={'icon'} />
         <div className="container">
           {salesproductData.map((item,index)=>{
-            return <Cart key={index} discount={item.discount} img={item.img} 
-            itemName={item.productName} price={item.price} not={item.notPrice} />
+            return <Cart 
+              key={index} 
+              discount={item.discount} 
+              img={item.img} 
+              itemName={item.productName} 
+              price={item.price} 
+              not={item.notPrice} 
+              cartEvent={onclickCartEvent} 
+            />
           })}
         </div>
       </div>

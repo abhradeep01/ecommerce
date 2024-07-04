@@ -1,7 +1,7 @@
 import React from 'react'
 import List from '../component/List'
 import './header.css';
-import dataheader from '../data/otherdata.json';
+import headerData from '../data/otherdata.json';
 function Header() {
   const category = ["women's fashion",
   "men's fashion","electronics",
@@ -31,7 +31,7 @@ function Header() {
             })}
         </div>
         <div className="right">
-            {dataheader.slide.map((item,index)=>{
+            {headerData.slide.map((item,index)=>{
                 return <Slide 
                 key={index}
                 img={item.img} 

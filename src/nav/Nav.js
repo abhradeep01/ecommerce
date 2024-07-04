@@ -90,11 +90,11 @@ const Nav = () => {
                 <div className="settings">
                     <div className="add">
                         <CiHeart className='icon' />
-                        <p>0</p>
+                        <p className='heartcount'>0</p>
                     </div>
                     <div className="add">
                         <CiShoppingCart className='icon' />
-                        <p>0</p>
+                        <p className='cartcount'>0</p>
                     </div>
                     <CiUser className='icon' />
                 </div>

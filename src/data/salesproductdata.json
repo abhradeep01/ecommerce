@@ -33,5 +33,19 @@
         "productName":"SONY PS5 gaming console",
         "price":"550",
         "notPrice":"650"
+    },
+    {
+        "discount":"44%",
+        "img":"../images/jacket.png",
+        "productName":"the north face jacket",
+        "price":"100",
+        "notPrice":"340"
+    },
+    {
+        "discount":"20%",
+        "img":"../images/kids-car.png",
+        "productName":"rechargable car for child",
+        "price":"950",
+        "notPrice":"1550"
     }
 ]
