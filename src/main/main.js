@@ -31,6 +31,7 @@ const service = [
 
 //main component
 function Main() {
+
   const onclickCartEvent = (e)=>{
     const clickedElement = e.target;
     const parent = clickedElement.closest('#cart');
@@ -42,6 +43,25 @@ function Main() {
       discount:parent.dataset.discount,
       bool:parent.dataset.favorite
     };
+    console.log(JSON.stringify(cartInfo));
+  }
+
+  const onclickFavEvent =(e)=>{
+    const clickedElement = e.target;
+    const parent = clickedElement.closest('#cart');
+    if(parent.dataset.favorite){
+      window.alert('item added to favorite item')
+    }
+    else{
+      window.alert('item remove from favorite item.');
+    }
+    const cartInfo = {
+      itemImg:parent.querySelector('img').src,
+      itemName:parent.dataset.itemName,
+      itemPrice:parent.dataset.price,
+      discount:parent.dataset.discount,
+      bool:parent.dataset.favorite
+    }
     console.log(JSON.stringify(cartInfo));
   }
   const Service =()=>{
@@ -121,6 +141,7 @@ function Main() {
               itemName={item.productName}
               price={item.price}
               cartEvent={onclickCartEvent}
+              favEvent={onclickFavEvent}
             />
           })}
         </div>
@@ -160,6 +181,7 @@ function Main() {
              price={item.price}
              not={item.notprice}
              cartEvent={onclickCartEvent}
+             favEvent={onclickFavEvent}
             />
           })}
         </div>
@@ -217,6 +239,7 @@ function Main() {
               price={item.price} 
               not={item.notPrice} 
               cartEvent={onclickCartEvent} 
+              favEvent={onclickFavEvent}
             />
           })}
         </div>

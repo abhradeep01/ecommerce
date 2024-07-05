@@ -4,22 +4,26 @@ import {FavoriteBorder,Favorite} from '@mui/icons-material';
 import { IconButton } from '@mui/material';
 import {grey} from '@mui/material/colors';
 
-function Cart({img,discount,itemName,price,not,cartEvent}) {
+function Cart({img,discount,itemName,price,not,cartEvent,favEvent}) {
   const [favorite,setFavorite] = React.useState(false);
 
+  const onclickevent =(e)=>{
+    setFavorite(!favorite);
+    favEvent(e);
+  }
   return (
     <div className={styles.cart} id='cart' data-item-name={itemName} data-price={price}
-      data-discount={discount} data-favorite={favorite}>
+      data-discount={discount} data-favorite={favorite} data-set-favorite={setFavorite}>
         <div className={`${styles.tags} ${discount==='new'?
           styles.green:styles.red}`} style={discount?{display:'block'}:
           {display:'none'}} id='discount' data-discount={discount} >{discount}
         </div>
         <div className={styles.float_icon}>
           {favorite?
-            <IconButton onClick={()=>setFavorite(!favorite)}>
+            <IconButton onClick={onclickevent}>
               <Favorite className={styles.icon} color='error' />
             </IconButton>:
-            <IconButton onClick={()=>setFavorite(!favorite)}>
+            <IconButton onClick={onclickevent} >
               <FavoriteBorder className={styles.icon} sx={{color:grey[900]}} />
             </IconButton>
           }
