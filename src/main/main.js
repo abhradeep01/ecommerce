@@ -27,7 +27,7 @@ const service = [
     head:'money back garantee',
     about:'we return money within 30 days'
   }
-]
+];
 
 //main component
 function Main() {
@@ -62,6 +62,11 @@ function Main() {
       discount:parent.dataset.discount,
       bool:parent.dataset.favorite
     }
+    var fav = document.querySelector('.heartcount');
+    let favNum = fav.nodeValue;
+    favNum = favNum +1;
+    fav.nodeValue=favNum;
+    console.log(favNum);
     console.log(JSON.stringify(cartInfo));
   }
   const Service =()=>{
@@ -136,7 +141,7 @@ function Main() {
           {ExportData.map((item,index)=>{
             return <Cart
               key={index}
-              discount={item.discount}
+              float={item.discount}
               img={item.img}
               itemName={item.productName}
               price={item.price}
@@ -175,7 +180,7 @@ function Main() {
           {sellingProductsData.map((item,index)=>{
             return <Cart
              key={index}
-             discount={item.discount} 
+             float={item.discount} 
              img={item.img} 
              itemName={item.productName}
              price={item.price}
@@ -233,7 +238,7 @@ function Main() {
           {salesproductData.map((item,index)=>{
             return <Cart 
               key={index} 
-              discount={item.discount} 
+              float={item.discount} 
               img={item.img} 
               itemName={item.productName} 
               price={item.price} 
