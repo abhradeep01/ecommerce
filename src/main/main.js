@@ -31,7 +31,8 @@ const service = [
 
 //main component
 function Main() {
-
+  let addToCartItems = [];
+  let addToFavoriteItems = [];
   const onclickCartEvent = (e)=>{
     const clickedElement = e.target;
     const parent = clickedElement.closest('#cart');
@@ -43,7 +44,8 @@ function Main() {
       discount:parent.dataset.discount,
       bool:parent.dataset.favorite
     };
-    console.log(JSON.stringify(cartInfo));
+    addToCartItems.push(cartInfo);
+    localStorage.setItem('cartItems',JSON.stringify(addToCartItems));
   }
 
   const onclickFavEvent =(e)=>{
@@ -55,19 +57,15 @@ function Main() {
     else{
       window.alert('item remove from favorite item.');
     }
-    const cartInfo = {
+    const favItemInfo = {
       itemImg:parent.querySelector('img').src,
       itemName:parent.dataset.itemName,
       itemPrice:parent.dataset.price,
       discount:parent.dataset.discount,
       bool:parent.dataset.favorite
     }
-    var fav = document.querySelector('.heartcount');
-    let favNum = fav.nodeValue;
-    favNum = favNum +1;
-    fav.nodeValue=favNum;
-    console.log(favNum);
-    console.log(JSON.stringify(cartInfo));
+    addToFavoriteItems.push(favItemInfo);
+    localStorage.setItem('favItem',JSON.stringify(addToFavoriteItems));
   }
   const Service =()=>{
     const Card =({icon,head,about})=>{

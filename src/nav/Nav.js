@@ -11,7 +11,7 @@ const Nav = () => {
     const [headerItems,setHeaderItems] = useState([]);
     const [menuVisible,setMenuVisible] = useState(false);
     const [categoryVisible,setCategoryVisible]= useState(false);
-
+    let favItemCount = JSON.parse(localStorage.getItem('favItem'));
     useEffect(()=>{
         // for nav section menu
         const nav = document.querySelector('nav');
@@ -90,7 +90,7 @@ const Nav = () => {
                 <div className="settings">
                     <div className="add">
                         <CiHeart className='icon' />
-                        <p className='heartcount'>0</p>
+                        <p className='heartcount'>{favItemCount?`${favItemCount.length}`:0}</p>
                     </div>
                     <div className="add">
                         <CiShoppingCart className='icon' />
